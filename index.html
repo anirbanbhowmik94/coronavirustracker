@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Landing - covidtracker</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap" rel="stylesheet">  
+</head>
+<body>
+  <nav class="white navbar-fixed" role="navigation">
+      <div class="container nav-wrapper">
+        <a href="#!" class="brand-logo center red-text">Covid-19</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+      </div>
+  </nav>
+    
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">About</a></li>
+  </ul>
+
+  <div class="container section no-pad-bot" id="index-banner">
+     <div class="row">
+      <h4 class="center">India</h4>
+      <hr width="50"></hr>
+      <div class="preloader-background" id="splash">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-red-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="app"></div> 
+     </div>
+  </div>
+
+  <footer class="page-footer white">
+    <div class="footer-copyright black-text">
+      <div class="container center">
+      Designed with <a class="black-text text-lighten-4" href="https://materializecss.com/">Materialize CSS</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    fetchList();
+    });
+  </script>
+
+  </body>
+</html>
