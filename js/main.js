@@ -116,7 +116,7 @@ function renderCountryData(countryData){
     <li class="collection-item avatar">
       <i class="material-icons circle red">flag</i>
       <span class="title">${countryData.country}</span>
-      <table class="striped centered">
+      <table class="responsive-table striped centered">
         <thead>
           <tr>
             <th>Total Cases</th>
