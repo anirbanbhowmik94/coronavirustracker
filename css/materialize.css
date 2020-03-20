@@ -2976,10 +2976,21 @@ table {
   display: table;
   border-collapse: collapse;
   border-spacing: 0;
+
 }
 
 table.striped tr {
   border-bottom: none;
+}
+
+table.striped tr >th{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+table.striped tr >td{
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 table.striped > tbody > tr:nth-child(odd) {
@@ -3118,11 +3129,15 @@ td, th {
 }
 
 .collection .collection-item.avatar .title {
-  font-size: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  align-content: center;
 }
 
 .collection .collection-item.avatar p {
   margin: 0;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 .collection .collection-item.avatar .secondary-content {
@@ -5866,7 +5881,7 @@ body.keyboard-focused .dropdown-content li:focus {
   bottom: -100%;
   margin: 0;
   width: 100%;
-  max-height: 45%;
+  max-height: 55%;
   border-radius: 0;
   will-change: bottom, opacity;
 }

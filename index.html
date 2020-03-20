@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Landing - covidtracker</title>
+  <title>Landing - Covid-19 Tracker</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -15,6 +15,9 @@
   <nav class="white navbar-fixed" role="navigation">
       <div class="container nav-wrapper">
         <a href="#!" class="brand-logo center red-text">Covid-19</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Global Data</a></li>
+        </ul>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
       </div>
   </nav>
@@ -24,7 +27,7 @@
   </ul>
 
   <div class="container section no-pad-bot" id="index-banner">
-     <div class="row">
+    <div class="row">
       <h4 class="center">India</h4>
       <hr width="50"></hr>
       <div class="preloader-background" id="splash">
@@ -48,11 +51,18 @@
 
   <div class="container section no-pad-bot">
     <div class="row">
-     <h4 class="center">Global</h4>
+     <h4 class="center">Global Stats</h4>
      <hr width="50"></hr>
      <div id="global"></div> 
     </div>
- </div>
+  </div>
+
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <ul class="collection" id="countryList">
+      </ul>
+    </div>
+  </div>
   
 
   <footer class="page-footer white">
@@ -72,8 +82,8 @@
   <script type="text/javascript">
     $(document).ready(function(){
     $('.sidenav').sidenav();
-    fetchCountry();
-    fetchGlobal();
+    fetchData();
+    $('.modal').modal();
     });
   </script>
 
